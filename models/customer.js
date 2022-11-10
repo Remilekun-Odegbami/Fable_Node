@@ -17,7 +17,7 @@ const CustomerSchema = new mongoose.Schema({
         minLength: 2,
     },
     phone: {
-        type: String,
+        type: Number,
         minLength: 11,
         maxLength: 15,
     },
@@ -36,7 +36,7 @@ const CustomerSchema = new mongoose.Schema({
     },
     terms: {
         type: Boolean,
-        required: true
+        //required: true
     }
 })
 
