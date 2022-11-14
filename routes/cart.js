@@ -1,4 +1,4 @@
-import Cart from "../models/Cart.js";
+import Cart from "../models/cart.js";
 import express from "express";
 
 const router = express.Router();

@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 
-import Customer from "../models/Customer.js";
+import Customer from "../models/customer.js";
 
 // Create Customer
 router.post('/', async (req, res) => {

@@ -3,7 +3,7 @@ import express from "express";
 const router = express.Router();
 
 import imageUpload from "../middleware/upload/imageStorage.js";
-import Product from "../models/Product.js";
+import Product from "../models/product.js";
 
 
 // Create product
