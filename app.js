@@ -24,7 +24,10 @@ mongoose
     .catch(err => console.log(err));
 
 const corsOption = {
-    origin: "http://localhost:3000",
+    origin: [
+        "http://localhost:3000",
+        "https://fable-ten.vercel.app/"
+    ],
     method: "GET, POST, DELETE, PUT, PATCH",
 }
 
