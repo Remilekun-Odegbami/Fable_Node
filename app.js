@@ -23,16 +23,17 @@ mongoose
     .then(console.log("connected to MongoDb"))
     .catch(err => console.log(err));
 
-const corsOption = {
-    origin: [
-        "http://localhost:3000",
-        "https://fable-ten.vercel.app/"
-    ],
-    method: "GET, POST, DELETE, PUT, PATCH",
-}
+// const corsOption = {
+//     origin: [
+//         "http://localhost:3000",
+//         "https://fable-ten.vercel.app/"
+//     ],
+//     method: "GET, POST, DELETE, PUT, PATCH",
+// }
 
 app.use(helmet());
-app.use(cors(corsOption));
+app.use(cors());
+//app.use(cors(corsOption));
 
 app.use("/api/products", productRoute);
 app.use("/api/customer", customerRoute);
